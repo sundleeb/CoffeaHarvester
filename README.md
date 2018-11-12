@@ -1,4 +1,4 @@
-# NanoTuples (Custom NanoAOD ntuple producers for VHcc)
+# CoffeaHarvester (NanoAOD coffeabeans producer)
 
 ### Set up CMSSW
 
