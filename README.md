@@ -125,8 +125,10 @@ cmsDriver.py mc -n -1 --mc --eventcontent NANOAODSIM --datatier NANOAODSIM --con
 Data (94X, re-miniAOD 31Mar2018):
 
 ```bash
-cmsDriver.py data -n 100 --data --eventcontent NANOAOD --datatier NANOAOD --conditions 94X_dataRun2_v6 --step NANO --nThreads 4 --era Run2_2017,run2_miniAOD_94XFall17 --customise PhysicsTools/NanoTuples/nanoTuples_cff.nanoTuples_customizeData --filein  file:step-1.root --fileout file:nano.root --no_exec
+cmsDriver.py data -n -1 --data --eventcontent NANOAOD --datatier NANOAOD --conditions 94X_dataRun2_v6 --step NANO --nThreads 4 --era Run2_2017,run2_miniAOD_94XFall17 --customise PhysicsTools/NanoTuples/nanoTuples_cff.nanoTuples_customizeData --filein  file:step-1.root --fileout file:nano.root --no_exec
 ```
+Global tags and eras are gotten from: '''https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookMiniAOD'''
+
 
 **Step 2**: use the `crab.py` script to submit the CRAB jobs:
 
